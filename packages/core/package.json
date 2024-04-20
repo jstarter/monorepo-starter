@@ -1,0 +1,28 @@
+{
+  "name": "@demo/core",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild"
+  },
+  "keywords": [],
+  "author": "justorez",
+  "license": "MIT",
+  "dependencies": {
+    "@demo/shared": "workspace:*",
+    "consola": "^3.2.3"
+  }
+}
